@@ -458,237 +458,201 @@ const SITE = {
 
   /* ── 1. PROFIL ───────────────────────────────────────────── */
   profile: {
-    fullName : "Arya Wicaksana",
-    initials : "AW",
+    fullName : "Akmal Satrio Nugraha",
+    initials : "ASN",
     photo    : "",                 // contoh: "assets/img/profile.jpg" — kosongkan untuk pakai inisial
-    title    : "IT & Network Engineer",
-    typing   : ["IT & Network Engineer","Infrastructure Engineer","System Administrator","Data Center Operations"],
-    intro    : "Building, managing and optimizing reliable IT infrastructure, networks and systems.",
+    title    : "IT Infrastructure & Network Specialist",
+    typing   : ["IT Infrastructure & Network Specialist","Network Engineer","Cloud & Virtualization Specialist","Systems Administrator"],
+    intro    : "Adaptable IT professional specializing in IT infrastructure, cloud computing, and server virtualization — combining a Telecommunication Engineering background with hands-on colocation data center and MikroTik network routing experience.",
     status   : "Available for Opportunities",
-    location : "Jakarta, Indonesia",
-    focus    : ["IT Infrastructure","Network","System","Data Center"]
+    location : "Karawang, Jawa Barat, Indonesia",
+    focus    : ["IT Infrastructure","Network Engineering","Cloud Computing","Virtualization","Local AI"]
   },
 
   /* ── 2. SOCIAL & KONTAK ──────────────────────────────────── */
   social: {
-    linkedin : "https://linkedin.com/in/username",
-    github   : "https://github.com/username",
-    email    : "arya.wicaksana@example.com",
-    whatsapp : "6281234567890"     // format internasional, tanpa tanda +
+    linkedin : "https://www.linkedin.com/in/akmalsatrion",
+    github   : "",
+    email    : "akmal.satrio.n@gmail.com",
+    whatsapp : "6285174442035"     // format internasional, tanpa tanda +
   },
 
   /* ── 3. CV / RESUME ──────────────────────────────────────── */
   cv: {
-    file    : "assets/cv/CV-Arya-Wicaksana.pdf",   // taruh file PDF di folder ini
+    file    : "assets/cv/Akmal-Satrio-Nugraha-CV.pdf",   // taruh file PDF di folder ini
     updated : "Updated August 2026",
     online  : "#experience"
   },
 
   /* ── 4. ABOUT ────────────────────────────────────────────── */
   about: {
-    heading: "Infrastruktur yang tenang adalah infrastruktur yang dirancang dengan benar.",
+    heading: "Reliable infrastructure is built quietly, long before anyone notices it working.",
     paragraphs: [
-      "Saya IT & Network Engineer dengan pengalaman lebih dari lima tahun merancang, mengoperasikan, dan merawat infrastruktur teknologi — dari jaringan kantor multi-site, server virtualisasi, sampai operasional data center skala menengah.",
-      "Keseharian saya berputar di routing dan switching, firewall, virtualisasi Proxmox VE, storage berbasis ZFS, dan monitoring proaktif. Downtime yang paling mahal adalah yang tidak pernah terlihat datang, jadi saya membangun sistem yang bisa diamati sebelum ia bermasalah.",
-      "Di luar jam kerja saya menjalankan homelab sendiri untuk menguji topologi, automasi, dan skenario disaster recovery sebelum menyentuh lingkungan produksi."
+      "I'm an IT professional and network specialist with a background in Telecommunication Engineering, focused on IT infrastructure management, cloud computing, and server virtualization. For over five years I ran my own hosting business end-to-end — architecting bare-metal servers, managing colocation data centers, and keeping systems online for a global client base.",
+      "My daily work spans MikroTik routing, Proxmox virtualization, Linux administration, and Layer 4/7 Anti-DDoS mitigation. I care about infrastructure that stays boring — no surprise outages, no undocumented configs, systems that fail gracefully instead of catastrophically.",
+      "Lately I've been integrating local AI models — Ollama and LM Studio — into everyday workflows, building privacy-focused assistants that don't leak data to the cloud."
     ],
     highlights: [
-      "Desain dan implementasi jaringan multi-site dengan segmentasi VLAN dan VPN antar cabang",
-      "Operasional cluster virtualisasi Proxmox VE beserta strategi backup dan restore",
-      "Monitoring dan alerting end-to-end menggunakan Zabbix dan Grafana",
-      "Dokumentasi teknis dan runbook yang membuat operasional bisa direplikasi tim"
+      "Founded and ran LtSamune Hosting for 5+ years, from bare-metal deployment to global client acquisition",
+      "Implemented Layer 4 & Layer 7 Anti-DDoS mitigation to keep colocation infrastructure resilient",
+      "Migrated legacy cloud infrastructure (AWS, OVH, Contabo, Alibaba Cloud) to self-hosted environments to cut costs",
+      "Deployed a privacy-focused local LLM assistant with hybrid retrieval across local and internet sources"
     ],
     terminal: [
-      { cmd:"whoami",   out:"IT & Network Engineer" },
-      { cmd:"uptime",   out:"Infrastructure online — 5+ years" },
-      { cmd:"skills",   out:"Networking | Linux | Virtualization | Data Center" },
-      { cmd:"location", out:"Jakarta, Indonesia — open to remote" }
+      { cmd:"whoami",   out:"IT Infrastructure & Network Specialist" },
+      { cmd:"uptime",   out:"5+ years running production infrastructure" },
+      { cmd:"skills",   out:"MikroTik | Proxmox VE | AWS/GCP/Azure | Anti-DDoS" },
+      { cmd:"location", out:"Karawang, Indonesia — open to remote" }
     ]
   },
 
   /* ── 5. STATISTIK ────────────────────────────────────────── */
   stats: [
     { value:"5",   suffix:"+", label:"Years Experience" },
-    { value:"40",  suffix:"+", label:"Projects Delivered" },
-    { value:"120", suffix:"+", label:"Systems Managed" },
-    { value:"24/7",suffix:"",  label:"Infrastructure Mindset" }
+    { value:"10",  suffix:"",  label:"Team Members Led" },
+    { value:"3",   suffix:"",  label:"Certifications" },
+    { value:"3",   suffix:"",  label:"Cloud Platforms" }
   ],
 
   /* ── 6. SKILLS — level: 1 Beginner · 2 Intermediate · 3 Advanced · 4 Expert ── */
   skills: [
-    { category:"Networking", icon:"network", items:[
-      {name:"TCP/IP",level:4},{name:"VLAN & Trunking",level:4},{name:"Routing (Static/OSPF)",level:3},
-      {name:"Switching",level:4},{name:"Firewall Policy",level:3},{name:"VPN (IPsec/WireGuard)",level:3},
-      {name:"DNS",level:3},{name:"DHCP",level:4},{name:"NAT",level:4},
-      {name:"MikroTik RouterOS",level:4},{name:"Cisco IOS",level:3},{name:"Ubiquiti UniFi",level:3}
+    { category:"Networking & Security", icon:"network", items:[
+      {name:"MikroTik (Winbox)",level:4},{name:"Anti-DDoS (L4/L7 Mitigation)",level:4},
+      {name:"Network Routing",level:4},{name:"LAN Infrastructure",level:3},
+      {name:"Fiber Optic Technologies",level:3},{name:"CCTV Systems",level:2}
     ]},
-    { category:"System & Infrastructure", icon:"server", items:[
-      {name:"Linux (Debian/Ubuntu)",level:4},{name:"Windows Server",level:3},{name:"Active Directory",level:3},
-      {name:"Virtualization",level:4},{name:"Proxmox VE",level:4},{name:"VMware vSphere",level:3},
-      {name:"Docker",level:3},{name:"Server Management",level:4}
+    { category:"Systems & Virtualization", icon:"server", items:[
+      {name:"Proxmox VE",level:4},{name:"Pterodactyl Panel",level:4},{name:"Ubuntu Linux",level:4},
+      {name:"Windows Server",level:3},{name:"Active Directory",level:3},{name:"Windows Hyper-V",level:3}
     ]},
-    { category:"Storage", icon:"storage", items:[
-      {name:"NAS",level:3},{name:"SAN",level:2},{name:"RAID",level:4},
-      {name:"ZFS",level:3},{name:"Backup & Restore",level:4},{name:"Storage Management",level:3}
+    { category:"Cloud & Storage", icon:"storage", items:[
+      {name:"Amazon Web Services (AWS)",level:3},{name:"Google Cloud Platform (GCP)",level:3},
+      {name:"Microsoft Azure",level:3},{name:"Synology NAS (DSM)",level:3}
     ]},
-    { category:"Monitoring & Operations", icon:"pulse", items:[
-      {name:"Zabbix",level:4},{name:"Grafana",level:3},{name:"Uptime Monitoring",level:4},
-      {name:"Log Management",level:3},{name:"Troubleshooting",level:4}
+    { category:"Hardware & Infrastructure", icon:"pulse", items:[
+      {name:"Bare-Metal Server Assembly (X99)",level:4},{name:"Data Center Colocation",level:4},
+      {name:"Desktop Troubleshooting",level:4},{name:"Hardware Maintenance",level:3}
     ]},
-    { category:"Tools", icon:"terminal", items:[
-      {name:"Git",level:3},{name:"SSH",level:4},{name:"Terminal",level:4},
-      {name:"Bash Scripting",level:3},{name:"PowerShell",level:2},{name:"Ansible",level:2}
+    { category:"AI Tools", icon:"terminal", items:[
+      {name:"Ollama",level:3},{name:"LM Studio",level:3},{name:"Local LLM Deployment",level:3}
     ]}
   ],
 
   /* ── 7. PENGALAMAN KERJA ─────────────────────────────────── */
   experience: [
     {
-      role:"IT & Network Engineer",
-      company:"PT Nusantara Data Systems",
-      location:"Jakarta, Indonesia",
-      start:"2024", end:"Present", current:true,
-      summary:"Bertanggung jawab penuh atas infrastruktur jaringan dan server untuk kantor pusat serta enam cabang.",
+      role:"Founder & Chief Executive Officer (CEO)",
+      company:"LtSamune Hosting",
+      location:"Indonesia (Remote)",
+      start:"Jan 2020", end:"Jun 2025", current:false,
+      summary:"Founded and led a self-hosted web hosting and colocation business, owning infrastructure, engineering, and international business development end-to-end.",
       responsibilities:[
-        "Mengelola infrastruktur IT end-to-end: jaringan, server, storage, dan virtualisasi",
-        "Administrasi core switch, router, dan firewall untuk lebih dari 300 endpoint",
-        "Operasional cluster Proxmox VE beserta VM dan container produksi",
-        "Menjalankan monitoring, alerting, dan capacity planning",
-        "Penanganan insiden dan eskalasi termasuk rotasi on-call"
+        "Architected and deployed bare-metal physical servers on custom X99 platforms for colocation data centers",
+        "Migrated legacy infrastructure from cloud providers (AWS, OVH, Contabo, Alibaba Cloud) to self-hosted environments to optimize operational costs",
+        "Designed and managed web hosting panels using Pterodactyl, and administered Linux environments",
+        "Automated database management (MySQL, PhpMyAdmin, SQLite) and implemented Layer 4 & Layer 7 Anti-DDoS mitigation",
+        "Recruited and led a cross-functional team of 10 staff across customer service, web development, and infrastructure maintenance",
+        "Spearheaded international business negotiations and expanded global client acquisition"
       ],
       achievements:[
-        "Menurunkan unplanned downtime sekitar 40% dalam satu tahun lewat monitoring proaktif",
-        "Migrasi 25 server fisik ke cluster virtualisasi tanpa gangguan layanan",
-        "Standardisasi konfigurasi jaringan cabang: setup site baru turun dari 3 hari menjadi 6 jam"
+        "Reduced operational costs by migrating from multiple cloud providers to self-hosted bare-metal infrastructure",
+        "Built and led a 10-person cross-functional team supporting a global, digital-first customer community",
+        "Delivered end-to-end service delivery with custom billing integration (PHP/React)"
       ],
-      tech:["Proxmox VE","MikroTik","Cisco","ZFS","Zabbix","Linux","VLAN","IPsec"],
-      projects:["Data center migration","Branch network standardization","Backup & DR redesign"]
+      tech:["Proxmox VE","MikroTik","Pterodactyl","MySQL","PHP","React","Anti-DDoS L4/L7","X99 Bare-Metal"],
+      projects:["Colocation Data Center Buildout","Anti-DDoS Mitigation System","Custom Billing & Client Portal"]
     },
     {
-      role:"System & Network Administrator",
-      company:"PT Cahaya Teknologi Mandiri",
-      location:"Bandung, Indonesia",
-      start:"2022", end:"2024",
-      summary:"Fokus pada stabilitas layanan internal dan modernisasi infrastruktur server.",
+      role:"IT Infrastructure & Service Management Intern",
+      company:"PT. GS BATTERY",
+      location:"Indonesia",
+      start:"Sep 2022", end:"Dec 2022",
+      summary:"Provided cross-departmental technical support and hands-on network maintenance across corporate offices and manufacturing plant sites.",
       responsibilities:[
-        "Administrasi Linux dan Windows Server termasuk Active Directory",
-        "Implementasi segmentasi VLAN dan kebijakan firewall",
-        "Pengelolaan backup harian dan pengujian restore berkala",
-        "Dokumentasi topologi dan prosedur operasional"
+        "Acted as primary point of contact for cross-departmental user issues, resolving hardware, software, printing, and connectivity faults under strict SLAs",
+        "Administered user credentials, security groups, and password resets within the corporate Active Directory environment",
+        "Conducted hands-on troubleshooting and termination of LAN infrastructure across offices and manufacturing plant sites",
+        "Performed preventative hardware maintenance and organized physical IT assets during audits and relocations"
       ],
       achievements:[
-        "Membangun sistem backup terjadwal dengan verifikasi restore bulanan",
-        "Implementasi Zabbix untuk 80+ host dan memangkas waktu deteksi insiden secara signifikan"
+        "Maintained SLA compliance across cross-departmental helpdesk support",
+        "Supported IT asset auditing and relocation without service disruption"
       ],
-      tech:["Linux","Windows Server","Active Directory","Zabbix","VMware","VLAN"],
-      projects:["Backup automation","Network segmentation","Monitoring rollout"]
-    },
-    {
-      role:"IT Support Specialist",
-      company:"PT Sinar Kreasi Digital",
-      location:"Bandung, Indonesia",
-      start:"2020", end:"2022",
-      summary:"Awal karier di operasional IT harian dengan eksposur langsung ke jaringan dan server.",
-      responsibilities:[
-        "Dukungan teknis untuk pengguna, perangkat, dan aplikasi internal",
-        "Instalasi dan perawatan perangkat jaringan kantor",
-        "Troubleshooting konektivitas, printer, dan endpoint"
-      ],
-      achievements:[
-        "Membangun knowledge base internal yang memangkas pertanyaan berulang",
-        "Merapikan struktur kabel dan dokumentasi rack di kantor pusat"
-      ],
-      tech:["Windows","Networking","Ticketing","Hardware"],
-      projects:["Office network refresh","IT asset inventory"]
+      tech:["Active Directory","LAN Infrastructure","Hardware Maintenance","Helpdesk"],
+      projects:["Corporate LAN Maintenance","IT Asset Audit & Relocation"]
     }
   ],
 
   /* ── 8. PROJECTS ─────────────────────────────────────────── */
   projects: [
-    { name:"Data Center Infrastructure", category:"Infrastructure",
-      description:"Deployment dan pengelolaan infrastruktur data center skala menengah: layout rack, redundansi daya, cabling terstruktur, dan prosedur operasional harian.",
-      role:"Lead Engineer", status:"Live", year:"2025",
-      tech:["Proxmox VE","Linux","ZFS","Networking","Zabbix"], image:"", links:{github:"",demo:""} },
+    { name:"Local AI Assistant Deployment", category:"Automation",
+      description:"Engineered and deployed a privacy-focused local LLM assistant using Ollama and LM Studio, with a hybrid retrieval system querying local vector databases and external internet sources.",
+      role:"Engineer", status:"Completed", year:"2026",
+      tech:["Ollama","LM Studio","Local LLM","Vector Database"], image:"", links:{github:"",demo:""} },
 
-    { name:"Multi-Site Network Design", category:"Networking",
-      description:"Desain jaringan enam cabang dengan segmentasi VLAN, routing antar-site, kebijakan firewall, dan VPN terenkripsi ke kantor pusat.",
-      role:"Network Engineer", status:"Live", year:"2025",
-      tech:["MikroTik","VLAN","IPsec VPN","Firewall","OSPF"], image:"", links:{github:"https://github.com/username/network-templates",demo:""} },
+    { name:"Colocation Data Center Buildout", category:"Infrastructure",
+      description:"Architected and deployed bare-metal physical servers on custom X99 platforms for colocation data centers, migrating off multiple cloud providers to a self-hosted environment.",
+      role:"Founder & Lead Engineer", status:"Completed", year:"2020-2025",
+      tech:["Proxmox VE","X99 Bare-Metal","Pterodactyl","Linux"], image:"", links:{github:"",demo:""} },
 
-    { name:"Virtualization Cluster", category:"Infrastructure",
-      description:"Cluster Proxmox VE tiga node dengan shared storage, high availability, dan pemisahan workload antara VM dan container.",
-      role:"Infrastructure Engineer", status:"Live", year:"2024",
-      tech:["Proxmox VE","Docker","LXC","Ceph","Linux"], image:"", links:{github:"",demo:""} },
+    { name:"Anti-DDoS Mitigation System", category:"Networking",
+      description:"Implemented Layer 4 and Layer 7 Anti-DDoS mitigation strategies to keep colocation hosting infrastructure resilient against attacks.",
+      role:"Network Engineer", status:"Completed", year:"2020-2025",
+      tech:["Anti-DDoS","MikroTik","Layer 4/7"], image:"", links:{github:"",demo:""} },
 
-    { name:"Monitoring & Alerting Stack", category:"Monitoring",
-      description:"Observability terpusat untuk perangkat jaringan dan server, lengkap dengan dashboard kapasitas dan alur eskalasi alert.",
-      role:"Engineer", status:"Live", year:"2024",
-      tech:["Zabbix","Grafana","SNMP","Telegram API"], image:"", links:{github:"https://github.com/username/monitoring-stack",demo:""} },
-
-    { name:"Backup & Disaster Recovery", category:"Infrastructure",
-      description:"Strategi backup 3-2-1 dengan snapshot ZFS, replikasi off-site, pengujian restore terjadwal, dan dokumentasi RTO/RPO.",
-      role:"Lead Engineer", status:"In Progress", year:"2026",
-      tech:["ZFS","Proxmox Backup Server","Rsync","Bash"], image:"", links:{github:"",demo:""} },
-
-    { name:"Network Automation Scripts", category:"Automation",
-      description:"Kumpulan skrip untuk backup konfigurasi perangkat, audit kepatuhan, dan laporan inventaris jaringan otomatis.",
-      role:"Author", status:"Completed", year:"2023",
-      tech:["Bash","Python","SSH","Git"], image:"", links:{github:"https://github.com/username/net-automation",demo:""} }
+    { name:"Custom Billing & Client Portal", category:"Automation",
+      description:"Built end-to-end service delivery and custom billing integration for a global hosting client base.",
+      role:"Founder & Developer", status:"Completed", year:"2020-2025",
+      tech:["PHP","React","MySQL"], image:"", links:{github:"",demo:""} }
   ],
 
   /* ── 9. SERTIFIKASI ──────────────────────────────────────── */
   certifications: [
-    { name:"MikroTik Certified Network Associate (MTCNA)", issuer:"MikroTik", date:"2023", credentialId:"MTCNA-2023-014277", url:"https://mikrotik.com/training/certificates" },
-    { name:"Cisco Certified Network Associate (CCNA)", issuer:"Cisco", date:"2022", credentialId:"CSCO13579246", url:"https://cisco.com/verify" },
-    { name:"Linux Professional Institute LPIC-1", issuer:"LPI", date:"2022", credentialId:"LPI000412885", url:"" },
-    { name:"Proxmox VE Advanced Training", issuer:"Proxmox Server Solutions", date:"2024", credentialId:"", url:"" }
+    { name:"CCNA v7 — Introduction to Networks, Switching Routing & Wireless Essentials, Enterprise Networking Security & Automation", issuer:"Cisco Networking Academy", date:"", credentialId:"", url:"" },
+    { name:"Cybercops Associate", issuer:"Cisco Networking Academy", date:"", credentialId:"", url:"" },
+    { name:"Occupational Safety and Health (OSH) Supervision Training", issuer:"Ministry of Manpower of the Republic of Indonesia", date:"", credentialId:"", url:"" }
   ],
 
   /* ── 10. PENDIDIKAN ──────────────────────────────────────── */
   education: [
-    { institution:"Universitas Teknologi Nusantara", degree:"S1 Teknik Informatika",
-      start:"2016", end:"2020", gpa:"3.62 / 4.00",
-      coursework:["Computer Networks","Operating Systems","Distributed Systems","Database Systems"],
-      achievement:"Tugas akhir: sistem monitoring jaringan berbasis SNMP untuk lingkungan kampus." },
-    { institution:"SMK Negeri 2 Bandung", degree:"Teknik Komputer & Jaringan",
-      start:"2013", end:"2016", gpa:"",
-      coursework:["Network Fundamentals","Hardware","Server Basics"], achievement:"" }
+    { institution:"Telkom University", degree:"S1 Telecommunication Engineering",
+      start:"Aug 2020", end:"Feb 2024", gpa:"3.29 / 4.00",
+      coursework:[], achievement:"" }
   ],
 
   /* ── 11. TECHNICAL ENVIRONMENT (diagram interaktif) ──────── */
   environment: {
-    caption:"Homelab & production reference topology",
+    caption:"Colocation & hosting reference topology",
     nodes:[
-      { id:"inet", label:"Internet",     kind:"WAN",       x:70,  y:150, detail:"Uplink dua ISP dengan failover otomatis dan pemantauan latensi berkelanjutan.", specs:[["Link","2× ISP"],["Failover","Automatic"],["Public IP","203.0.113.10"]] },
-      { id:"rtr",  label:"Edge Router",  kind:"ROUTER",    x:215, y:150, detail:"MikroTik CCR sebagai gerbang utama: NAT, policy routing, QoS, dan terminasi VPN antar cabang.", specs:[["Device","MikroTik CCR2004"],["Role","NAT · QoS · VPN"],["Address","10.10.10.1"]] },
-      { id:"fw",   label:"Firewall",     kind:"SECURITY",  x:360, y:150, detail:"Segmentasi zona dan kebijakan least privilege antara VLAN user, server, dan management.", specs:[["Zones","4"],["Policy","Least privilege"],["IDS","Enabled"]] },
-      { id:"sw",   label:"Core Switch",  kind:"L3 SWITCH", x:505, y:150, detail:"Switch inti dengan VLAN trunking, inter-VLAN routing, dan LACP ke node virtualisasi.", specs:[["VLANs","8"],["Uplink","2× 10G LACP"],["Mgmt","10.10.99.2"]] },
-      { id:"srv",  label:"Proxmox Node", kind:"COMPUTE",   x:665, y:70,  detail:"Cluster tiga node yang menjalankan VM produksi dan container layanan internal.", specs:[["Nodes","3"],["Workload","VM + LXC"],["HA","Enabled"]] },
-      { id:"stg",  label:"Storage",      kind:"ZFS POOL",  x:665, y:150, detail:"Pool ZFS dengan snapshot terjadwal, kompresi, dan replikasi ke lokasi cadangan.", specs:[["Layout","RAIDZ2"],["Snapshots","Hourly"],["Replication","Off-site"]] },
-      { id:"mon",  label:"Monitoring",   kind:"OBSERVE",   x:665, y:230, detail:"Zabbix mengumpulkan metrik, Grafana menampilkan tren, alert diteruskan ke kanal on-call.", specs:[["Hosts","120+"],["Retention","365 days"],["Alerting","24/7"]] }
+      { id:"inet", label:"Internet",     kind:"WAN",       x:70,  y:150, detail:"Uplink used across colocation and hosting infrastructure, with multi-provider redundancy.", specs:[["Providers","Multi-carrier"],["Failover","Automatic"],["Public IP","203.0.113.10"]] },
+      { id:"rtr",  label:"Edge Router",  kind:"ROUTER",    x:215, y:150, detail:"MikroTik router handling NAT, routing, and VPN termination — configured and managed via Winbox.", specs:[["Device","MikroTik"],["Role","NAT · Routing · VPN"],["Tool","Winbox"]] },
+      { id:"fw",   label:"Firewall",     kind:"SECURITY",  x:360, y:150, detail:"Layer 4 & Layer 7 Anti-DDoS mitigation protecting colocation and hosting infrastructure.", specs:[["Mitigation","L4 & L7"],["Policy","Anti-DDoS"],["Scope","Colocation hosting"]] },
+      { id:"sw",   label:"Core Switch",  kind:"L3 SWITCH", x:505, y:150, detail:"Core switching layer handling LAN segmentation across colocation racks.", specs:[["Layer","L3"],["Uplink","LACP"],["Scope","Colocation LAN"]] },
+      { id:"srv",  label:"Proxmox Node", kind:"COMPUTE",   x:665, y:70,  detail:"Proxmox VE cluster running production VMs and containers for hosting clients, managed via Pterodactyl panel.", specs:[["Platform","Proxmox VE"],["Panel","Pterodactyl"],["Workload","VM + Container hosting"]] },
+      { id:"stg",  label:"Storage",      kind:"NAS",       x:665, y:150, detail:"Synology NAS (DSM) storage with scheduled backups for hosted client data.", specs:[["Platform","Synology DSM"],["Backups","Scheduled"],["Role","Client data storage"]] },
+      { id:"mon",  label:"Availability", kind:"OBSERVE",   x:665, y:230, detail:"Uptime and availability monitoring across colocation servers and hosting infrastructure.", specs:[["Focus","Uptime"],["Scope","Colocation fleet"],["Response","On-call"]] }
     ],
     links:[["inet","rtr"],["rtr","fw"],["fw","sw"],["sw","srv"],["sw","stg"],["sw","mon"]],
     stacks:[
-      { title:"NETWORK",        items:["Internet","Edge Router","Firewall","Core Switch","Access Layer"] },
-      { title:"VIRTUALIZATION", items:["Proxmox VE","Virtual Machines","LXC Containers","Docker"] },
-      { title:"STORAGE",        items:["ZFS","RAIDZ2","NAS","Off-site Backup"] },
-      { title:"MONITORING",     items:["Zabbix","Grafana","Log Collection","Alerting"] }
+      { title:"NETWORK",        items:["MikroTik (Winbox)","Anti-DDoS L4/L7","Fiber Optic","LAN Infrastructure"] },
+      { title:"VIRTUALIZATION", items:["Proxmox VE","Windows Hyper-V","Pterodactyl Panel"] },
+      { title:"STORAGE",        items:["Synology NAS (DSM)","Bare-Metal X99 Servers"] },
+      { title:"CLOUD",          items:["AWS","GCP","Microsoft Azure"] }
     ]
   },
 
   /* ── 12. CAREER JOURNEY ──────────────────────────────────── */
   journey: [
-    { year:"2020", title:"Started IT Career",       text:"Masuk operasional IT sebagai support specialist." },
-    { year:"2021", title:"System Administration",   text:"Mulai memegang server Linux dan Windows secara mandiri." },
-    { year:"2022", title:"Network Infrastructure",  text:"Desain VLAN, routing, dan kebijakan firewall kantor." },
-    { year:"2023", title:"Server & Virtualization", text:"Membangun cluster virtualisasi pertama di produksi." },
-    { year:"2024", title:"Data Center Operations",  text:"Terlibat penuh dalam operasional data center." },
-    { year:"2026", title:"IT & Network Engineer",   text:"Memegang infrastruktur multi-site end-to-end.", now:true }
+    { year:"2020", title:"Founded LtSamune Hosting",          text:"Started a self-hosted web hosting and colocation business from the ground up." },
+    { year:"2022", title:"IT Infrastructure Intern",          text:"Gained hands-on enterprise IT experience at PT. GS BATTERY — helpdesk, Active Directory, and LAN maintenance." },
+    { year:"2024", title:"Graduated Telkom University",       text:"Completed a degree in Telecommunication Engineering." },
+    { year:"2025", title:"Scaled Hosting Infrastructure",     text:"Grew LtSamune Hosting to a 10-person team serving a global client base before closing the venture." },
+    { year:"2026", title:"Local AI & Infrastructure",         text:"Deployed privacy-focused local LLM assistants and continues exploring AI-driven infrastructure automation.", now:true }
   ],
 
   /* ── 13. FOOTER ──────────────────────────────────────────── */
   footer: {
-    motto:"Building reliable infrastructure, one network at a time.",
+    motto:"Building reliable infrastructure — and exploring what local AI can do for it.",
     signature:"Designed & Built with ☕ + Code"
   },
 
@@ -760,7 +724,7 @@ const SITE = {
         </div>
         <div class="portrait">
           <span class="floaty f1">10.10.10.1</span>
-          <span class="floaty f2">TCP/IP · VLAN · ZFS</span>
+          <span class="floaty f2">MikroTik · Proxmox · Anti-DDoS</span>
           <span class="portrait-corner pc-tl" aria-hidden="true"></span>
           <span class="portrait-corner pc-br" aria-hidden="true"></span>
           <div class="portrait-frame">
@@ -1275,7 +1239,7 @@ $("#projTabs").addEventListener("click",e=>{
 /* ── certifications ── */
 $("#certList").innerHTML=SITE.certifications.map(c=>
  '<article class="card cert"><span class="cert-seal">'+svg(I.award,1.9)+"</span><div><h3>"+esc(c.name)+"</h3>"
- +'<p class="cert-sub">'+esc(c.issuer)+" · "+esc(c.date)+"</p>"
+ +'<p class="cert-sub">'+esc(c.issuer)+(c.date?" · "+esc(c.date):"")+"</p>"
  +(c.credentialId?'<p class="cert-id">ID · '+esc(c.credentialId)+"</p>":"")+"</div>"
  +(c.url?'<a class="cert-verify" href="'+esc(c.url)+'" target="_blank" rel="noopener">Verify '+svg(I.ext,2)+"</a>":"")
  +"</article>").join("");
