@@ -1,4 +1,4 @@
-/* ═══════════ APP — tidak perlu diedit untuk mengganti konten ═══════════ */
+/* ═══════════ APP — no need to edit this to change site content ═══════════ */
 (function(){
 "use strict";
 const $  = (s,r=document)=>r.querySelector(s);
@@ -53,8 +53,8 @@ document.title=P.fullName+" — "+P.title;
 $("#resumeOnline").href=SITE.cv.online||"#experience";
 
 $("#portraitSlot").outerHTML = P.photo
-  ? '<img src="'+esc(P.photo)+'" alt="Foto profil '+esc(P.fullName)+'" decoding="async">'
-  : '<div class="initials" role="img" aria-label="Inisial '+esc(P.fullName)+'">'+esc(P.initials)+'</div>';
+  ? '<img src="'+esc(P.photo)+'" alt="Profile photo of '+esc(P.fullName)+'" decoding="async">'
+  : '<div class="initials" role="img" aria-label="Initials of '+esc(P.fullName)+'">'+esc(P.initials)+'</div>';
 
 const socialHTML=socialSet.map(s=>'<a class="icon-btn" href="'+esc(s.href)+'" aria-label="'+s.label+'"'+(/^https?:/.test(s.href)?' target="_blank" rel="noopener"':'')+'>'+svg(s.icon,1.9)+'</a>').join("");
 $("#heroSocials").innerHTML=socialHTML;
@@ -278,17 +278,17 @@ $("#projTabs").innerHTML=projCats.map((c,i)=>'<button class="tab" role="tab" ari
 function renderProjects(cat){
   const list=cat==="All"?SITE.projects:SITE.projects.filter(p=>p.category===cat);
   const grid=$("#projGrid");
-  if(!list.length){grid.innerHTML='<p class="empty">Belum ada proyek pada kategori ini.</p>';return;}
+  if(!list.length){grid.innerHTML='<p class="empty">No projects in this category yet.</p>';return;}
   grid.innerHTML=list.map((p,i)=>
    '<article class="card proj"><div class="proj-vis">'
-   +(p.image?'<img src="'+esc(p.image)+'" alt="Pratinjau proyek '+esc(p.name)+'" loading="lazy" decoding="async">':projArt(i+1))
+   +(p.image?'<img src="'+esc(p.image)+'" alt="Preview of '+esc(p.name)+'" loading="lazy" decoding="async">':projArt(i+1))
    +'<span class="pv-tag">'+esc(p.category)+" · "+esc(p.year)+"</span></div>"
    +'<div class="proj-body"><div class="proj-top"><h3>'+esc(p.name)+"</h3>"
    +'<span class="badge '+statusCls(p.status)+'">'+esc(p.status)+"</span></div>"
    +"<p>"+esc(p.description)+"</p>"
    +'<div class="tags">'+p.tech.map(t=>'<span class="chip">'+esc(t)+"</span>").join("")+"</div>"
    +'<div class="proj-foot"><span class="proj-role">role · '+esc(p.role)+'</span><span class="proj-links">'
-   +((p.links&&p.links.github)?'<a href="'+esc(p.links.github)+'" target="_blank" rel="noopener" aria-label="Repositori '+esc(p.name)+'">'+svg(I.github,1.8)+"</a>":"")
+   +((p.links&&p.links.github)?'<a href="'+esc(p.links.github)+'" target="_blank" rel="noopener" aria-label="Repository for '+esc(p.name)+'">'+svg(I.github,1.8)+"</a>":"")
    +((p.links&&p.links.demo)?'<a href="'+esc(p.links.demo)+'" target="_blank" rel="noopener" aria-label="Demo '+esc(p.name)+'">'+svg(I.ext,1.8)+"</a>":"")
    +"</span></div></div></article>").join("");
 }
@@ -377,7 +377,7 @@ $("#contactList").innerHTML=rows.map(r=>{
 }).join("");
 
 const form=$("#contactForm"),endpoint=(SITE.form&&SITE.form.endpoint)||"";
-$("#formNote").textContent=endpoint?"Pesan dikirim langsung ke inbox saya.":"Tombol ini membuka aplikasi email kamu dengan pesan yang sudah terisi.";
+$("#formNote").textContent=endpoint?"Your message is sent straight to my inbox.":"This button opens your email app with the message pre-filled.";
 function mark(el,bad){el.closest(".field").classList.toggle("bad",bad);return !bad;}
 form.addEventListener("submit",async e=>{
   e.preventDefault();
@@ -396,17 +396,17 @@ form.addEventListener("submit",async e=>{
       const res=await fetch(endpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(data)});
       const payload=await res.json().catch(()=>({}));
       if(!res.ok) throw new Error(payload.error||"bad status");
-      $("#sentMsg").textContent="Terima kasih, "+data.name+". Balasan akan dikirim ke "+data.email+" dalam satu hari kerja.";
+      $("#sentMsg").textContent="Thanks, "+data.name+". You'll get a reply at "+data.email+" within one business day.";
     }else{
       const body=encodeURIComponent(data.message+"\n\n— "+data.name+" ("+data.email+")");
       window.location.href=mailTo+"?subject="+encodeURIComponent(data.subject)+"&body="+body;
-      $("#sentMsg").textContent="Aplikasi email kamu terbuka dengan pesan yang sudah terisi. Tinggal tekan kirim.";
+      $("#sentMsg").textContent="Your email app has opened with the message pre-filled. Just hit send.";
     }
     form.style.display="none";
     $("#sent").classList.add("show");
   }catch(err){
     const note=$("#formNote");
-    note.textContent="Pengiriman gagal. Coba lagi, atau email langsung ke "+S.email+".";
+    note.textContent="Sending failed. Please try again, or email me directly at "+S.email+".";
     note.style.color="#ff8087";
   }finally{ btn.disabled=false; btn.style.opacity=""; }
 });

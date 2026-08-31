@@ -1,11 +1,11 @@
 /* ╔════════════════════════════════════════════════════════════╗
-   ║  DATA PROFIL — HANYA BAGIAN INI YANG PERLU KAMU EDIT        ║
-   ║  Ganti isi objek SITE dengan data pribadi kamu.             ║
-   ║  Layout, style, dan animasi tidak perlu disentuh.           ║
+   ║  PROFILE DATA — THE ONLY PART YOU NEED TO EDIT              ║
+   ║  Replace the contents of the SITE object with your own data.║
+   ║  You don't need to touch layout, style, or animation.       ║
    ╚════════════════════════════════════════════════════════════╝ */
 const SITE = {
 
-  /* ── 1. PROFIL ───────────────────────────────────────────── */
+  /* ── 1. PROFILE ──────────────────────────────────────────── */
   profile: {
     fullName : "Akmal Satrio Nugraha",
     initials : "ASN",
@@ -14,11 +14,11 @@ const SITE = {
     typing   : ["IT Infrastructure & Network Specialist","Network Engineer","Cloud & Virtualization Specialist","Systems Administrator"],
     intro    : "Adaptable IT professional specializing in IT infrastructure, cloud computing, and server virtualization — combining a Telecommunication Engineering background with hands-on colocation data center and MikroTik network routing experience.",
     status   : "Available for Opportunities",
-    location : "Karawang, Jawa Barat, Indonesia",
+    location : "Karawang, West Java, Indonesia",
     focus    : ["IT Infrastructure","Network Engineering","Cloud Computing","Virtualization","Local AI"]
   },
 
-  /* ── 2. SOCIAL & KONTAK ──────────────────────────────────── */
+  /* ── 2. SOCIAL & CONTACT ─────────────────────────────────── */
   social: {
     linkedin : "https://www.linkedin.com/in/akmalsatrion",
     github   : "",
@@ -28,7 +28,7 @@ const SITE = {
 
   /* ── 3. CV / RESUME ──────────────────────────────────────── */
   cv: {
-    file    : "assets/cv/Akmal-Satrio-Nugraha-CV.pdf",   // taruh file PDF di folder ini
+    file    : "assets/cv/Akmal-Satrio-Nugraha-CV.pdf",   // put the PDF file in this folder
     updated : "Updated August 2026",
     online  : "#experience"
   },
@@ -55,7 +55,7 @@ const SITE = {
     ]
   },
 
-  /* ── 5. STATISTIK ────────────────────────────────────────── */
+  /* ── 5. STATS ─────────────────────────────────────────────── */
   stats: [
     { value:"5",   suffix:"+", label:"Years Experience" },
     { value:"10",  suffix:"",  label:"Team Members Led" },
@@ -87,7 +87,7 @@ const SITE = {
     ]}
   ],
 
-  /* ── 7. PENGALAMAN KERJA ─────────────────────────────────── */
+  /* ── 7. WORK EXPERIENCE ──────────────────────────────────── */
   experience: [
     {
       role:"Engineer on Site (EOS) — Digital",
@@ -171,21 +171,21 @@ const SITE = {
       tech:["PHP","React","MySQL"], image:"", links:{github:"",demo:""} }
   ],
 
-  /* ── 9. SERTIFIKASI ──────────────────────────────────────── */
+  /* ── 9. CERTIFICATIONS ───────────────────────────────────── */
   certifications: [
     { name:"CCNA v7 — Introduction to Networks, Switching Routing & Wireless Essentials, Enterprise Networking Security & Automation", issuer:"Cisco Networking Academy", date:"", credentialId:"", url:"" },
     { name:"Cybercops Associate", issuer:"Cisco Networking Academy", date:"", credentialId:"", url:"" },
     { name:"Occupational Safety and Health (OSH) Supervision Training", issuer:"Ministry of Manpower of the Republic of Indonesia", date:"", credentialId:"", url:"" }
   ],
 
-  /* ── 10. PENDIDIKAN ──────────────────────────────────────── */
+  /* ── 10. EDUCATION ───────────────────────────────────────── */
   education: [
     { institution:"Telkom University", degree:"D3 Telecommunication Engineering",
       start:"Aug 2020", end:"Feb 2024", gpa:"3.29 / 4.00",
       coursework:[], achievement:"" }
   ],
 
-  /* ── 11. TECHNICAL ENVIRONMENT (diagram interaktif) ──────── */
+  /* ── 11. TECHNICAL ENVIRONMENT (interactive diagram) ─────── */
   environment: {
     caption:"Colocation & hosting reference topology",
     nodes:[
@@ -222,8 +222,8 @@ const SITE = {
     signature:"Designed & Built with ☕ + Code"
   },
 
-  /* ── 14. FORM KONTAK ─────────────────────────────────────── */
-  // Kosong  → form membuka aplikasi email dengan isi otomatis.
-  // Terisi  → form POST ke endpoint (Formspree, Web3Forms, dll).
+  /* ── 14. CONTACT FORM ────────────────────────────────────── */
+  // Empty → the form opens the visitor's email app with the message pre-filled.
+  // Set   → the form POSTs to this endpoint (Formspree, Web3Forms, your own backend, etc).
   form: { endpoint:"http://localhost:3001/api/contact" }
 };
