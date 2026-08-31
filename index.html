@@ -659,7 +659,7 @@ const SITE = {
   /* ── 14. FORM KONTAK ─────────────────────────────────────── */
   // Kosong  → form membuka aplikasi email dengan isi otomatis.
   // Terisi  → form POST ke endpoint (Formspree, Web3Forms, dll).
-  form: { endpoint:"" }
+  form: { endpoint:"http://localhost:3001/api/contact" }
 };
 </script>
 
@@ -889,6 +889,10 @@ const SITE = {
         </div>
         <div class="card rv">
           <form id="contactForm" novalidate>
+            <div class="field" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true">
+              <label for="f-website">Website</label>
+              <input id="f-website" type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
             <div class="row2">
               <div class="field"><label for="f-name">Name</label><input id="f-name" type="text" autocomplete="name" placeholder="Nama kamu"><span class="err">Isi nama kamu dulu.</span></div>
               <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" autocomplete="email" placeholder="nama@email.com"><span class="err">Alamat email belum valid.</span></div>
@@ -1327,11 +1331,12 @@ form.addEventListener("submit",async e=>{
   ].every(Boolean);
   if(!ok){const f=form.querySelector(".field.bad input,.field.bad textarea"); if(f)f.focus(); return;}
   const btn=$("#sendBtn"); btn.disabled=true; btn.style.opacity=".65";
-  const data={name:n.value.trim(),email:em.value.trim(),subject:su.value.trim(),message:ms.value.trim()};
+  const data={name:n.value.trim(),email:em.value.trim(),subject:su.value.trim(),message:ms.value.trim(),website:$("#f-website").value};
   try{
     if(endpoint){
       const res=await fetch(endpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(data)});
-      if(!res.ok) throw new Error("bad status");
+      const payload=await res.json().catch(()=>({}));
+      if(!res.ok) throw new Error(payload.error||"bad status");
       $("#sentMsg").textContent="Terima kasih, "+data.name+". Balasan akan dikirim ke "+data.email+" dalam satu hari kerja.";
     }else{
       const body=encodeURIComponent(data.message+"\n\n— "+data.name+" ("+data.email+")");
